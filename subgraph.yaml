@@ -1,12 +1,15 @@
-specVersion: 0.0.2
+specVersion: 0.0.4
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: near
-    name: thebullishbulls
+    name: <contract-name>
     network: near-mainnet
     source:
-      account: "thebullishbulls.near"
+      account: "<contract-you-want-to-analyze.near>"
+      # change startBlock to the block hash the contract starts
+      startBlock: 99999999
+      # 60119219 - thebullishbulls.near contract "last updated" transaction
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
