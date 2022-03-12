@@ -3,13 +3,14 @@ schema:
   file: ./schema.graphql
 dataSources:
   - kind: near
-    name: <contract-name>
+    name: thebullishbulls
     network: near-mainnet
     source:
-      account: "<contract-you-want-to-analyze.near>"
+      account: "thebullishbulls.near"
       # change startBlock to the block hash the contract starts
-      startBlock: 99999999
+      startBlock: 60119219
       # 60119219 - thebullishbulls.near contract "last updated" transaction
+      # found on the NEAR Explorer - https://explorer.near.org/accounts/thebullishbulls.near
     mapping:
       apiVersion: 0.0.5
       language: wasm/assemblyscript
