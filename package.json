@@ -1,0 +1,17 @@
+{
+  "name": "near-contract-analyzer-debug-tool",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "auth" : "graph auth --product=hosted-service <your-access-token-here>",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ r-strawser/near-contract-analyzer-debug-tool",
+    "create-local": "graph create --node http://localhost:8020/ r-strawser/near-contract-analyzer-debug-tool",
+    "remove-local": "graph remove --node http://localhost:8020/ r-strawser/near-contract-analyzer-debug-tool",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 r-strawser/near-contract-analyzer-debug-tool"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.26.0",
+    "@graphprotocol/graph-ts": "0.24.1"
+  }
+}
